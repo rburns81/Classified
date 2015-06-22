@@ -1,0 +1,10 @@
+{
+  "require": {
+    "eventviva/php-image-resize": "1.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "classified\\": "src/"
+    }
+  }
+}

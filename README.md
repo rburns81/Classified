@@ -1,0 +1,5 @@
+# Classified Ads
+At work I maintain a simple classifieds page in HTML.  This requires hand-writing every entry, resizing photos, etc.  I am seeking to automate the process a bit, and hopefully shift the responsibility to someone else once the technical work is no longer required.
+I will make this with PHP and MySql.  I haven't written anything in either for a while, and I am eager to hone my skills and get comfortable with more modern, object oriented PHP code.
+The initial goal is to create a display page for the ads and basic admin console with a form and some controls for editing and deleting ads.
+Long term goals are to add picture resizing, and perhaps authentication for the admin user.  Since this is an internal app for a mostly non-technical audience I am comfortable with security by obscurity for now.
