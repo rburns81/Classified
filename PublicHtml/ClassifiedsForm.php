@@ -7,6 +7,7 @@
  */
 //TODO Add PDO commands to pull classified types
 //TODO Add <select> list with classified types
+require '../vendor/autoload.php';
 $teaser = isset($teaser) ? $teaser : '';
 $description = isset($description) ? $description : '';
 $price = isset($price) ? $price : '';
@@ -14,11 +15,11 @@ $adOwner = isset($adOwner) ? $adOwner : '';
 $contact1 = isset($contact1) ? $contact1 : '';
 $contact2 = isset($contact2) ? $contact2 : '';
 $id = isset($id) ? $id : '';
-include 'ClassifiedAd.php';
-include 'Database.php';
-$conn = new Database();
+include '../src/ClassifiedAd.php';
+include '../src/Database.php';
+$conn = new classified\Database();
 $db = $conn->makeDbConn();
-$results = ClassifiedAd::fetchTypes($db);
+$results = classified\DataFetcher::fetchTypes($db);
 include 'header.php';
 ?>
         <form>

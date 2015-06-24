@@ -8,14 +8,11 @@
  */
 require '../vendor/autoload.php';
 
-//TODO add pictures to ads
 $adBook = new classified\AdsBook();
 $data = $adBook->fetchAllAds();
 $pics = $adBook->fetchAllPics($data);
 
 $ads = $adBook->makeAds($data, $pics);
-/*echo '<pre>';
-print_r($ads);*/
 $adWriter = new classified\AdWriter();
 
 include 'header.php';
